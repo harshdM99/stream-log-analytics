@@ -1,2 +1,13 @@
 # dataset
 data/
+
+# Key file
+*.ppk
+
+# test files
+test*
+
+container-files*
+credentials
+ec2-codes
+*.drawio
