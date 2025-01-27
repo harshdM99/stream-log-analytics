@@ -12,7 +12,3 @@ credentials
 ec2-codes
 *.drawio
 architecture
-
-# configuration files
-application.conf
-config.py
