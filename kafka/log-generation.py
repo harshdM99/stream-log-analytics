@@ -4,8 +4,6 @@ import random
 import time
 import faker
 from datetime import datetime, timezone
-import os
-os.environ['TZ'] = 'America/New_York'
 fak = faker.Faker()
 
 KAFKA_BROKER = 'localhost:9092'
@@ -33,7 +31,7 @@ dictionary = {
 for _ in range(1,40000):
     producer = KafkaProducer(
         bootstrap_servers=KAFKA_BROKER,
-        value_serializer=lambda v: json.dumps(v).encode('utf-8')  #Serialize messages as JSON
+        value_serializer=lambda v: json.dumps(v).encode('utf-8') 
     )
     
     log_entry = {

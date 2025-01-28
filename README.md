@@ -3,9 +3,6 @@
 This project demonstrates real-time data streaming, processing, and visualization using **Apache Kafka**, **PySpark**, **Cassandra** and an interactive Python **Dash dashboard** that visualizes the processed data. Initially, the visualization was hosted on an EC2 instance to provide real-time updates. For cost-effectiveness and simplicity in presentation, a static version of the dashboard was later hosted online.
 
 ## Overview
-
-Here you want to write a short overview of the goals of your project and how it works at a high level. If possible, include one or two images of the end product and architecture diagram (see examples below). diagrams.net is a great tool for creating architecture diagrams.
-
 <!-- ### Data Visualization
 ![Example dashboard image](example-dashboard.png) -->
 
@@ -58,7 +55,7 @@ The project simulates a real-time system to generate logs, process them, and vis
 ## **Prerequisites**
 
 ### **Steps to Recreate the Project on AWS Free Tier:**
-- **Launch EC2 Instances (t2.micro or larger depending on data volume)**
+- **Launch 3 EC2 Instances (t2.micro or larger depending on data volume):**
    - Kafka and Zookeeper
         - Create a topic named `logs` in Kafka.
         - Update the configuration file.
