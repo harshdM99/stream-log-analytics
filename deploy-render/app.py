@@ -143,6 +143,10 @@ app.layout = html.Div([
     dcc.Graph(figure=url_bar_fig),  # Pie chart for error responses
 ])
 
+@app.server.route("/health-check")
+def health_check_route():
+    return "App is running", 200
+
 # Run on render
 server = app.server
 
