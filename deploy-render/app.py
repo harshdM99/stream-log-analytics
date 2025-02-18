@@ -92,7 +92,7 @@ except Exception as e:
     table = html.Div("Error loading data.")
 
 # Initialize Dash app
-app = dash.Dash(__name__)
+app = dash.Dash(__name__, title="Log Analyzer")
 app.layout = html.Div([
     # Main title and note about static data
     html.H1("Real-Time Log Analytics Dashboard", style={
